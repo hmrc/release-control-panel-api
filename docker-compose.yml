@@ -1,0 +1,13 @@
+version: '2'
+
+services:
+  releasecontrolpanel.api:
+    image: releasecontrolpanel.api
+    build:
+      context: ./ReleaseControlPanel.API
+      dockerfile: Dockerfile
+    depends_on:
+      - mongodb
+
+  mongodb:
+    image: mongo
