@@ -31,14 +31,14 @@ Before running the tool for the first time you have to modify it's configuration
 The configuration file is located in `ReleaseControlPanel.API/appsettings.json`. If you're a member of HRMC Digital you can try looking for ready examples of configuration file in HMRC confluence.
 
 After that you have to instruct .NET to restore external packages.
-To do that open a new terminal / command line window, navigate to the project's root directory and run following command:
+To do that open a new terminal / command line window, navigate to the `ReleaseControlPanel.API/` directory within project's root and run following command:
 ```bash
 dotnet restore
 ```
 
 
 ## Starting the API
-Navigate to the root of the project and run `dotnet run`
+Navigate to the `ReleaseControlPanel.API/` directory of the project and run `dotnet run`
 
 You should be greeted wtih following message:
 ```
